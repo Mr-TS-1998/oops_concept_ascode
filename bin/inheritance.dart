@@ -1,8 +1,14 @@
-class Parent
+class Parent// SINGLE INHERITANCE
 {
   String name="Mr.TS";
   int age=24;
+  void show()
+  {
+    print("SINGLE INHERITANCE");
+    print("Parent function");
+  }
 }
+
 
 class child extends Parent
 {
@@ -13,7 +19,7 @@ class child extends Parent
 void main()
 {
   child obj=child();
-  print("SINGLE INHERITANCE");
+  obj.show();
   print("parent name: ${obj.name}");
   print("parent age: ${obj.age}");
   print("child name: ${obj.cname}");
